@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  /* display: flex; */
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+  /* background-color: #fff; */
+  background-image: (radial, 100% 100%, 10, 90% 90%, 600);
+  padding: 10px;
+  /* border-radius: 8px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1); */
+  width: 100%;
+  max-width: 500px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: legacy;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="file"] {
+  padding: 1px;
+}
+
+input[type="text"]:focus,
+select:focus,
+input[type="file"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
 }

@@ -21,3 +21,10 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+**cache**
+Lib
+Scripts
+Include
+uploaded_files/*
+uploaded_files/source_code.zip
